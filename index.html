@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <h1>Type Race</h1>
+            </div>
+            <div class="accuracy">
+                <p id="accuracy">0% Accuracy</p>
+            </div>
+            <div class="timer">
+                <p>Timer</p>
+                <p id="timer">00:00</p>
+            </div>
+            <div class="wpm">
+                <p id="wpm">
+                 0 WPM
+                </p>
+            </div>
+            <div class="button">
+                <button id="btn">New Game</button>
+            </div>
+        </header>
+            <div id="game">
+    
+                <div id="words"></div>
+               
+            </div>
+        </div>
+    </div>
+    <div class="popover">
+        <div class="popup">
+            <div class="acc"><p id="acc"></p></div>
+        <div class="time"><p>Time</p><p id="time"></p></div>
+        <div class="wpm-display"><p id="wpm-pop"></p></div>
+        </div>
+        <button id="next">Next</button>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>

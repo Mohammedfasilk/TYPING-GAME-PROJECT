@@ -1,0 +1,145 @@
+body{
+    background:rgb(34, 34, 34);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    background: white;
+}
+.wrap{
+    width: 100%;
+}
+div.word{
+    display: inline-block;
+}
+.correct{
+    color: white;
+    background: transparent;
+}
+.incorrect{
+    color: red;
+    background: transparent;
+}
+span{
+    font-family: monospace;
+    margin: 0 2px 0 0;
+    background: rgba(88, 87, 87, 0.655);
+    border-radius: 2px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem 0 5rem;
+}
+
+#game{
+    
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#words{
+    width: 80%;
+    font-size: 35px;
+    color: silver;
+    line-height: 3rem;
+}
+h1{
+    color: rgb(3, 3, 3);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+}
+button{
+    background: linear-gradient(45deg,rgb(50, 50, 50),rgb(109, 114, 109));
+    color: white;
+    padding: 10px 2rem 10px 2rem;
+}
+.accuracy p,.wpm p{
+    font-size: 20px;
+    color: rgb(23, 123, 151);
+    font-weight: bolder;
+}
+#text{
+    background: red;
+}
+.timer p{
+    font-size: 20px;
+    margin:0;
+    margin-top: 5px;
+    font-weight: bolder;
+}
+.space{
+    padding: 0 8px 0 8px;
+}
+.space.incorrect{
+    background: rgba(255, 0, 0, 0.363);
+}
+.popover{
+    position: absolute;
+    width: 38rem;
+    height: 18rem;
+    background: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem 2rem 1rem;
+    display: none;
+    border-radius: 8px;
+    z-index: 10;
+    transition: 1s;
+    animation: popup 1.5s infinite;
+}
+
+.popup{
+    
+    display: flex;
+    justify-content: space-evenly;
+
+
+    
+}
+.acc,.time,.wpm-display{
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: White;
+    font-size: 20px;
+}
+.acc{
+    
+    margin-top: 2rem;
+    
+}
+.time{
+  flex-direction: column;
+    
+}
+.time p{
+    margin: 0;
+}
+.wpm-display{
+    margin-top: 2rem;
+    
+}
+#next{
+    background: rgb(2, 69, 2);
+}
+
+@keyframes popup {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.02);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
