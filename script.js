@@ -67,7 +67,7 @@ document.getElementById('next').addEventListener('click', () => {
 
 function newGame(){
     document.getElementById('words').innerHTML = '';
-    for(let i=0;i<10;i++){
+    for(let i=0;i<20;i++){
         document.getElementById('words').innerHTML += wordsFormat(randomWord())+"";
     }
     addClass(document.querySelector('.word'),'current');
@@ -97,7 +97,7 @@ window.addEventListener('keyup',ev=>{
         clearInterval(intervel)
         document.querySelector('.popover').style = 'display:flex'
         document.querySelector('.wrap').style = 'filter: blur(3px)'
-        if(accuracy>=50 && Wpm>=20){
+        if(accuracy>=75 && Wpm>=25){
             const end = Date.now() + 15 * 1000;
             const colors = ["#bb0000", "#ffffff"];
 
